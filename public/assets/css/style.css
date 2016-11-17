@@ -610,13 +610,13 @@ fieldset[disabled] .btn-success:hover {
 }
 
 #portfolio .container5 {
-    background-color: #ff0000;
+    background-color: #2C3E50;
     height: 600px;
     border: 5px solid #ffffff;
 }
 
 #portfolio .container6 {
-    background-color: #2C3E50;
+    background-color: #ff0000;
     height: 600px;
     border: 5px solid #ffffff;
     overflow: scroll;
