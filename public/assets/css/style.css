@@ -628,3 +628,28 @@ fieldset[disabled] .btn-success:hover {
 h3 {
     padding-bottom: 10px;
 }
+
+#resume {
+    color: #ffffff;
+    font-size: 26px;
+    padding-left: 75px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1199px){
+    .success .container2 {
+        margin-bottom: -140px;
+        overflow: scroll;
+    }
+    .success .container2 .block .intro {
+    padding: 50px 50px 25px 75px;
+    }
+    #portfolio {
+        margin-top: -200px;
+        margin-bottom: -90px;
+    }
+    #contact {
+        margin-bottom: -50px;
+    }
+
+}
