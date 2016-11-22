@@ -325,16 +325,6 @@ form .row:first-child .floating-label-form-group {
     border-top: 1px solid #eee
 }
 
-footer {
-    padding-top: 50px;
-    background-color: #2C3E50;
-    /*color: #ffffff;*/
-    padding: 50px;
-    border-top: 5px solid #ffffff;
-    margin-top: 50px;
-    height: 200px;
-    width: 100%;
-}
 
 .btn-outline {
     color: #fff;
@@ -631,6 +621,23 @@ fieldset[disabled] .btn-success:hover {
 h3 {
     padding-bottom: 10px;
 }
+
+.box-email {
+    margin-bottom: 15px;
+}
+
+#email-link {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+/*footer {
+    background-color: #2C3E50;
+    color: #ffffff;
+    height: 90px;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+}*/
 
 @media screen and (max-width: 1199px) {
     .success .container2 {
