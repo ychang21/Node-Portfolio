@@ -198,19 +198,22 @@ section.success {
     }
 }
 
-#portfolio .portfolio-item {
+#portfolio .portfolio-item,
+#portfolio-second .portfolio-item {
     margin: 0 0 15px;
     right: 0
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#portfolio .portfolio-item .portfolio-link,
+#portfolio-second .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     max-width: 400px;
     margin: 0 auto
 }
 
-#portfolio .portfolio-item .portfolio-link .caption {
+#portfolio .portfolio-item .portfolio-link .caption,
+#portfolio-second .portfolio-item .portfolio-link .caption {
     background: rgba(44, 62, 80, 0.8);
     position: absolute;
     width: 100%;
@@ -221,11 +224,13 @@ section.success {
     -moz-transition: all ease .5s
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover,
+#portfolio-second .portfolio-item .portfolio-link .caption:hover {
     opacity: 1
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content,
+#portfolio-second .portfolio-item .portfolio-link .caption .caption-content {
     position: absolute;
     width: 100%;
     height: 20px;
@@ -248,7 +253,8 @@ section.success {
     height: 50px
 }
 
-#portfolio .portfolio-item .portfolio-link .caption .caption-content i {
+#portfolio .portfolio-item .portfolio-link .caption .caption-content i,
+#portfolio-second .portfolio-item .portfolio-link .caption .caption-content i {
     margin-top: -12px
 }
 
@@ -257,13 +263,15 @@ section.success {
     margin: 0
 }
 
-#portfolio * {
+#portfolio *,
+#portfolio-second * {
     z-index: 2
 }
 
 
 @media (min-width:767px) {
-    #portfolio .portfolio-item {
+    #portfolio .portfolio-item,
+    #portfolio-second .portfolio-item {
         margin: 0 0 30px
     }
 }
@@ -549,10 +557,6 @@ fieldset[disabled] .btn-success:hover {
     color: #ff0000;
 }
 
-/*#portfolio .leftMargin {
-    padding-left: 50px;
-}*/
-
 #contact {
     background-color: #2C3E50;
     color: #ffffff;
@@ -571,17 +575,16 @@ fieldset[disabled] .btn-success:hover {
 }
 
 #contact .container3 {
-    background-color: #ff0000;
-    height: 600px;
-    border: 5px solid #ffffff;
-}
-
-#contact .container4 {
     background-color: #2C3E50;
     height: 600px;
     border: 5px solid #ffffff;
 }
 
+#contact .container4 {
+    background-color: #ff0000;
+    height: 600px;
+    border: 5px solid #ffffff;
+}
 
 .success .container2 .block .intro {
     padding: 50px 50px 50px 75px;
@@ -591,9 +594,6 @@ fieldset[disabled] .btn-success:hover {
     padding-top: 250px;
 }
 
-/*.footer-col {
-    padding-top: 20px;
-}*/
 .links {
     padding-top: 20px;
 }
@@ -611,9 +611,23 @@ fieldset[disabled] .btn-success:hover {
     background-color: #ff0000;
     height: 600px;
     border: 5px solid #ffffff;
-    padding-top: 25px;
-    overflow: scroll;
+    padding-top: 40px;
 }
+
+#portfolio-second .container7 {
+    background-color: #ff0000;
+    height: 600px;
+    border: 5px solid #ffffff;
+    padding-top: 30px;
+}
+
+#portfolio-second .container8 {
+    background-color: #2C3E50;
+    height: 600px;
+    border: 5px solid #ffffff;
+    padding-top: 20px;
+}
+
 #contact .container5 #portfolioheader {
     padding-top: 250px;
 }
@@ -631,18 +645,11 @@ h3 {
     font-size: 20px;
 }
 
-/*footer {
-    background-color: #2C3E50;
-    color: #ffffff;
-    height: 90px;
-    width: 100%;
-    border-top: 5px solid #ffffff;
-}*/
 
 @media screen and (max-width: 1199px) {
-    .success .container2 {
+    /*.success .container2 {
         overflow: scroll;
-    }
+    }*/
     .success .container2 .block .intro {
         padding: 15px 5px 5px 5px;
     }
@@ -654,12 +661,42 @@ h3 {
     }
 
 }
+@media screen and (max-width: 768px) {
+    .success .container1,
+    .success .container2,
+    #portfolio .container5,
+    #contact .container3,
+    #contact .container4
+     {
+        height: 500px;
+    }
+    #aboutheader {
+        padding-top: 220px;
+    }
+    .success .container2 .block .intro {
+        padding: 70px 25px 25px 25px;
+    }
+    #portfolio h2 {
+        padding-top: 220px;
+    }
+    #contactheader {
+        padding-top: 220px;
+    }
+    #contact .container4 .contact-info {
+        padding-top: 30px;
+    }
+
+}
 @media screen and (max-width: 640px) {
     h3 {
         padding: 0;
         margin: 0;
     }
-    .success .container1 {
+    .success .container1,
+    .success .container2,
+    #portfolio .container5,
+    #contact .container3,
+    #contact .container4 {
         height: 320px;
     }
     #aboutheader {
@@ -667,31 +704,32 @@ h3 {
     }
     .success .container2 {
         overflow: scroll;
-        height: 320px;
     }
     .success .container2 .block .intro {
     padding: 10px 10px 10px 10px;
     }
-    #portfolio .container5 {
-        height: 320px;
+    #portfolio .container6,
+    #portfolio-second .container7,
+    #portfolio-second .container8 {
+        height: 550px;
+    }
+    #portfolio .container6 {
+        padding-top: 25px;
+    }
+    #portfolio-second .container7 {
+        padding-top: 15px;
+    }
+    #portfolio-second .container8 {
+        padding-top: 5px;
     }
     #portfolio h2 {
         padding-top: 125px;
     }
-    #portfolio .container6 {
-        height: 320px;
-    }
-    #contact .container3 {
-        height: 320px;
-    }
     #contactheader {
-        padding-top: 150px;
+        padding-top: 125px;
     }
-    #contact .container4 {
-        height: 320px;
-    }
-    .contact-info {
-        padding-top: 5px;
+    #contact .container4 .contact-info {
+        padding-top: 15px;
     }
 }
 
