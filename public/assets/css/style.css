@@ -587,7 +587,7 @@ fieldset[disabled] .btn-success:hover {
 }
 
 .success .container2 .block .intro {
-    padding: 50px 50px 50px 75px;
+    padding: 75px 50px 50px 75px;
 }
 
 #aboutheader, #contactheader {
@@ -625,7 +625,7 @@ fieldset[disabled] .btn-success:hover {
     background-color: #2C3E50;
     height: 600px;
     border: 5px solid #ffffff;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 #contact .container5 #portfolioheader {
@@ -661,6 +661,21 @@ h3 {
     }
 
 }
+
+@media screen and (max-width: 992px) {
+    .success .container2 .block .intro {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 857px) {
+    .success .container2 .block .intro {
+        font-size: 25px;
+    }
+
+}
+
 @media screen and (max-width: 768px) {
     .success .container1,
     .success .container2,
@@ -675,6 +690,7 @@ h3 {
     }
     .success .container2 .block .intro {
         padding: 70px 25px 25px 25px;
+        font-size: 20px;
     }
     #portfolio h2 {
         padding-top: 220px;
@@ -684,6 +700,15 @@ h3 {
     }
     #contact .container4 .contact-info {
         padding-top: 30px;
+    }
+    #portfolio .container6 {
+        padding-top: 35px;
+    }
+    #portfolio-second .container7 {
+        padding-top: 20px;
+    }
+    #portfolio-second .container8 {
+        padding-top: 40px;
     }
 
 }
@@ -717,10 +742,10 @@ h3 {
         padding-top: 25px;
     }
     #portfolio-second .container7 {
-        padding-top: 15px;
+        padding-top: 5px;
     }
     #portfolio-second .container8 {
-        padding-top: 5px;
+        padding-top: 20px;
     }
     #portfolio h2 {
         padding-top: 125px;
